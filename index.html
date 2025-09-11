@@ -5,16 +5,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>42 Project</title>
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
     <body>
         <div id="content">
-            <a class="card" id="thsukpib" href="CV/thsukpib.html">
-                <h1>Cxcosmo</h1>
-                
-            </a>
-            <a class="card" id="pitvongs" href="CV/pitvongs.html">
-                <h1>ritsupaintblu</h1>
-            </a>
+            <!-- Thsukpib -->
+            <div class="flip-card" id="photocard1">
+                <div class="flip-inner">
+                    <!-- Front -->
+                    <div class="card front">
+                        <div class="swap-btn" onclick="toggleFlip('photocard1')">
+                            <i data-lucide="refresh-cw"></i>
+                        </div>
+                        <a id="thsukpib" href="CV/thsukpib.html">
+                            <div class="photo-wrap">
+                                <img src="resource/image/baLd L.jpg" alt="photocard">
+                            </div>
+                            <div class="handwrite">the drama</div>
+                            <div class="bottom-gradient"></div>
+                            <div class="meta">
+                                <div class="name">KIM MINJEONG</div>
+                                <div class="date">01.01.2001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Back -->
+                    <div class="card back">
+                        <div class="swap-btn" onclick="toggleFlip('photocard1')">
+                            <i data-lucide="refresh-cw"></i>
+                        </div>
+                        <div class="title">the drama</div>
+                        <div class="note">I'M NEVER EVER GONNA STOP</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pitvongs -->
+            <div class="flip-card" id="photocard2">
+                <div class="flip-inner">
+                    <!-- Front -->
+                    <div class="card front">
+                        <div class="swap-btn" onclick="toggleFlip('photocard2')">
+                            <i data-lucide="refresh-cw"></i>
+                        </div>
+                        <a id="pitvongs" href="CV/pitvongs.html">
+                            <div class="photo-wrap">
+                                <img src="resource/image/Soy ese.jpg" alt="photocard">
+                            </div>
+                            <div class="handwrite">the drama</div>
+                            <div class="bottom-gradient"></div>
+                            <div class="meta">
+                                <div class="name">KIM MINJEONG</div>
+                                <div class="date">01.01.2001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Back -->
+                    <div class="card back">
+                        <div class="swap-btn" onclick="toggleFlip('photocard2')">
+                            <i data-lucide="refresh-cw"></i>
+                        </div>
+                        <div class="title">the drama</div>
+                        <div class="note">I'M NEVER EVER GONNA STOP</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="js/script.js"></script>
