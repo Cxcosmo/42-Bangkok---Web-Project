@@ -95,10 +95,10 @@ body{
     display:flex; align-items:center; justify-content:center;
 }
 .back_color_1{
-    background: linear-gradient(180deg, var(--secondary) 50%, var(--primary) 100%);
+    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
 }
 .back_color_2{
-    background: linear-gradient(180deg, var(--secondary) 50%, var(--accent) 100%);
+    background: linear-gradient(180deg, var(--accent) 0%, var(--secondary) 100%);
 }
 .back .title{
     font-family:"Dancing Script", cursive;
@@ -108,7 +108,7 @@ body{
 }
 .back .note{
     position:absolute; bottom:14px; width:100%;
-    text-align:center; font-size:10px; color:rgba(0,0,0,0.55);
+    text-align:center; font-size:10px; color:#ffffff;
 }
 
 .swap-btn{
