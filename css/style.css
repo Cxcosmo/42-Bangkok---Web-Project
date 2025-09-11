@@ -1,7 +1,7 @@
 :root {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
+    --primary: #28516f;
+    --secondary: #b93c9e;
+    --accent: #92cff3;
 }
 
 .content {
