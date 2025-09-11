@@ -1,0 +1,19 @@
+:root {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.content {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
