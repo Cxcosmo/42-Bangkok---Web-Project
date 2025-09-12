@@ -2,34 +2,48 @@
     --card-w: 300px;
     --card-h: 430px;
     --radius: 22px;
+    --shadow: 0 0px 36px;
+    --font-signature: 'GIGI', sans-serif;
     --primary: #a90000;
     --secondary: #1a1913;
     --accent: #ddd280;
-  }
+}
+
+@font-face {
+    font-family: 'GIGI';
+    src: url('../resource/font/GIGI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     font-family: "Inter", sans-serif;
-    min-height:100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
-    margin:0;
-    padding: 40px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../resource/image/death-the-devil-horror-satan-wallpaper-980e249098c9aff41e2990242a92a574.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-#content{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
 }
 
 .flip-card{
-    width:var(--card-w);
-    height:var(--card-h);
-    perspective:1000px;
-    position:relative;
+    width: var(--card-w);
+    height: var(--card-h);
+    perspective: 1000px;
+    position: relative;
 }
 
 .flip-inner{
@@ -52,6 +66,17 @@ body{
     box-shadow:0 18px 30px rgba(0,0,0,0.15);
     backface-visibility:hidden;
     overflow:hidden;
+}
+
+.card_hover_1:hover{
+    box-shadow:var(--shadow) var(--primary);
+    /* transform:scale(1.03); */
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+.card_hover_2:hover{
+    box-shadow:var(--shadow) var(--accent);
+    /* transform:scale(1.03); */
+    transition:transform 0.3s, box-shadow 0.3s;
 }
 
 /* front */
@@ -84,7 +109,7 @@ body{
 .meta .date{ font-size:11px; margin-top:4px; }
 .handwrite{
     position:absolute; left:14px; top:12px;
-    font-family:"Dancing Script", cursive; font-size:28px; color:white;
+    font-family:var(--font-signature); font-size:28px; color:white;
     text-shadow:0 3px 8px rgba(0,0,0,0.35);
     transform:rotate(-6deg);
 }
@@ -101,7 +126,7 @@ body{
     background: linear-gradient(180deg, var(--accent) 0%, var(--secondary) 100%);
 }
 .back .title{
-    font-family:"Dancing Script", cursive;
+    font-family:var(--font-signature);
     font-size:36px;
     opacity:0.95;
     color:#ffffff;
@@ -113,8 +138,8 @@ body{
 
 .swap-btn{
     position:absolute; top:10px; right:10px;
-    background:rgba(255,255,255,0.8);
     border-radius:50%;
+    background:rgba(0, 0, 0, 0.616);
     width:32px; height:32px;
     display:flex; align-items:center; justify-content:center;
     cursor:pointer;
@@ -122,5 +147,13 @@ body{
     box-shadow:0 2px 6px rgba(0,0,0,0.2);
     transition:background 0.2s;
 }
-.swap-btn:hover{ background:white; }
-.swap-btn svg{ width:18px; height:18px; color:#333; }
+.swap-btn:hover{ background:rgb(0, 0, 0); }
+.swap-btn svg{ width:18px; height:18px; color:#ffffff; }
+
+@media (max-width: 768px) {
+  #content {
+    flex-direction: column;
+    margin: 50px;
+    gap: 3rem;
+  }
+}
