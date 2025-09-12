@@ -6,6 +6,7 @@
         <title>Thsukpib CV</title>
         <link rel="stylesheet" href="../css/thsukpib.css">
         <link rel="stylesheet" href="../css/flipcard.css">
+        <link rel="stylesheet" href="../css/Img_gird_popup.css">
         <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
     <body>
@@ -23,16 +24,40 @@
         <main>
             <!-- About Me -->
             <section id="about-me">
-                <div>
-
-                </div>
+                <div class="about-container">
+    <div class="about-image">
+      <img src="https://via.placeholder.com/250" alt="Profile">
+    </div>
+    <div class="about-info">
+      <h2>About Me</h2>
+      <p>
+        สวัสดีครับ ผมชื่อ Cxcosmo <br>
+        เป็นนักพัฒนาเว็บที่ชอบ HTML, CSS, และ JavaScript <br>
+        สนใจงานด้าน Frontend และ UI/UX
+      </p>
+    </div>
+  </div>
             </section>
+
             <!-- Showcase -->
             <section id="showcase">
-                
+                <hr>
+                <h2>Showcase</h2>
+                <div class="grid">
+                    <img src="../resource/image/thsukpib/11a223ecd6b94818fe4fc6ded9d13b76.jpg" alt="img1">
+                    <img src="https://via.placeholder.com/200" alt="img2">
+                    <img src="https://via.placeholder.com/200" alt="img3">
+                </div>
+
+                <div id="popup" class="popup">
+                    <span class="close">&times;</span>
+                    <img class="popup-content" id="popup-img">
+                </div>
             </section>
+
             <!-- Content -->
             <section id="contact">
+                <hr>
                 <h2>Contact Me</h2>
                 <div id="content_card">
                     <!-- Facebook -->
@@ -126,10 +151,11 @@
             </section>
         </main>
         <footer>
-            <!-- <p>Copyright © 2025 Thsukpib</p> -->
+            <p>Copyright © 2025 Cxcosmo</p>
         </footer>
 
         <script src="../js/nav.js"></script>
         <script src="../js/flipcard.js"></script>
+        <script src="../js/pop_up.js"></script>
     </body>
 </html>

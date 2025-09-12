@@ -117,7 +117,6 @@ nav ul li a {
 }
 
 main {
-    margin-top: 120px;
     width: 100%;
     flex: 1;
 }
@@ -125,6 +124,32 @@ main {
 section {
     width: 100%;
     height: 100vh;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-signature);
+    color: var(--font_color_nav);
+    text-shadow: 
+        0 0 4px rgba(169,0,0,1),
+        0 0 4px rgba(169,0,0,1),
+        0 0 8px rgba(169,0,0,0.9),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 32px rgba(169,0,0,0.5),
+        0 0 2px var(--primary);
+    margin: 0 0 5rem 0;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid var(--primary);
+    margin: 0 0 5rem 0;
 }
 
 #content_card {
@@ -171,6 +196,15 @@ section {
 .back_font_1{ color: rgb(0, 64, 255); }
 .back_font_2{ color: rgb(255, 76, 106); }
 .back_font_3{ color: #ffffff; }
+
+footer {
+    width: 100%;
+
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--font_color_nav);
+    font-size: 0.9rem;
+}
 
 @media (max-width: 1300px) {
     nav ul {
