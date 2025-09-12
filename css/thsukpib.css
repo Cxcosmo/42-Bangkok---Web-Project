@@ -68,6 +68,7 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     color: var(--font_color_nav);
@@ -234,6 +235,14 @@ footer {
     font-size: 0.9rem;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--font_color_nav);
+  cursor: pointer;
+  z-index: 1100;
+}
+
 @media (max-width: 1300px) {
     nav ul {
         gap: 3rem;
@@ -244,9 +253,6 @@ footer {
 }
 
 @media (max-width: 1100px) {
-    header {
-        visibility: hidden;
-    }
     #content_card {
         flex-direction: column;
         margin: 50px;
@@ -255,5 +261,69 @@ footer {
     .about-container {
         flex-direction: column;
         align-items: center;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        border-radius: 50px;
+    }
+
+    nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: var(--secondary);
+        border-radius: 20px; /* ทุกมุมโค้งเท่ากัน */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        box-shadow: 
+            0 0 16px rgba(169,0,0,0.7),
+            0 0 32px rgba(169,0,0,0.5),
+            0 0 2px var(--primary);
+    }
+
+    nav.open {
+         max-height: 300px;
+    }
+
+    nav ul {
+         flex-direction: column;
+         align-items: center;
+         gap: 1.5rem;
+         padding: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        z-index: 1100;
+    }
+
+    .home-logo img {
+         height: 50px;
+         width: 50px;
+         border-radius: 50%;
+         object-fit: cover;
+         margin-right: 0.5rem;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
     }
 }

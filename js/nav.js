@@ -24,3 +24,10 @@ function setActiveLink() {
 setActiveLink();
 
 window.addEventListener("scroll", setActiveLink);
+
+const hamburger = document.getElementById("hamburger");
+    const nav = document.querySelector("header nav");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+});
