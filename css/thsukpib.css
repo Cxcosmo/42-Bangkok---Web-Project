@@ -1,13 +1,125 @@
-nav ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row; /* เรียงแนวนอน */
-  gap: 1rem;
-  list-style: none; /* เอาจุดออก */
+:root{
+    --radius: 22px;
+    --font-signature: 'GIGI', sans-serif;
+    --primary: #a90000;
+    --secondary: #1a1913;
+    --font_color_nav: #ffffff;
 }
+
+@font-face {
+    font-family: 'GIGI';
+    src: url('../resource/font/GIGI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 80px;
+    padding: 0 2rem;
+    margin-top: 1rem;
+    width: 70%;
+    background-color: var(--secondary);
+    border-radius: 50px;
+}
+
+.title {
+    font-family: var(--font-signature);
+    font-size: 2.5rem;
+    color: var(--font_color_nav);
+    text-shadow: 
+        0 0 4px rgba(169,0,0,1),
+        0 0 4px rgba(169,0,0,1),
+        0 0 8px rgba(169,0,0,0.9),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 32px rgba(169,0,0,0.5),
+        0 0 2px var(--primary);
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li a {
-  text-decoration: none;
-  color: black; /* เปลี่ยนสีตามต้องการ */
-  font-weight: bold;
+    text-decoration: none;
+    color: var(--font_color_nav);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--font_color_nav);
+    font-weight: 500;
+    padding: 4px 16px;
+}
+
+.nav-link.active {
+    text-shadow: 
+        0 0 4px rgba(169,0,0,1),
+        0 0 4px rgba(169,0,0,1),
+        0 0 8px rgba(169,0,0,0.9),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 32px rgba(169,0,0,0.5),
+        0 0 2px var(--primary);
+}
+
+.nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 20px;
+    -webkit-mask: url("../resource/svg/her-trick-skeleton.svg") no-repeat center/contain;
+    mask: url("../resource/svg/her-trick-skeleton.svg") no-repeat center/contain;
+    background-color: #ffffff;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    -webkit-mask: url("../resource/svg/his-treat-skeleton.svg") no-repeat center/contain;
+    mask: url("../resource/svg/his-treat-skeleton.svg") no-repeat center/contain;
+    background-color: #ffffff;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    background-color: #ffffff;
 }

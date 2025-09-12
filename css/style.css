@@ -172,9 +172,9 @@ body{
 .swap-btn svg{ width:18px; height:18px; color:#ffffff; }
 
 @media (max-width: 768px) {
-  #content {
-    flex-direction: column;
-    margin: 50px;
-    gap: 3rem;
-  }
+    #content {
+        flex-direction: column;
+        margin: 50px;
+        gap: 3rem;
+    }
 }
