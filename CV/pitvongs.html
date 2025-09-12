@@ -5,31 +5,166 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pisvongs CV</title>
         <link rel="stylesheet" href="../css/pitvongs.css">
+        <link rel="stylesheet" href="../css/flipcard.css">
+        <link rel="stylesheet" href="../css/Img_gird_popup.css">
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
     <body>
         <header>
-            <a href="../index.html"><img src="../resource/image/pitvongs/3cb814208317dcd46710503ce4249121.jpg" alt="Home"></a>
+            <div class="logo">ritsupaintblu</div>
             <nav>
                 <ul>
-                    <li><a href="#about-me">About-Me</a></li>
-                    <li><a href="#showcase">Showcase</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about-me" class="nav-link">About-Me</a></li>
+                    <li><a href="#showcase" class="nav-link">Showcase</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <a href="../index.html" ><img src="../resource/image/pitvongs/11a223ecd6b94818fe4fc6ded9d13b76.jpg" alt="Home"></a>
         </header>
         <main>
+            <!-- About Me -->
             <section id="about-me">
-
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="../resource/image/pitvongs/IMG_1171.png" alt="Profile">
+                    </div>
+                    <div class="about-info">
+                        <h1>Thanapon Sukpiboon</h1>
+                        <h4>Birth Day : 2/04 (19)</h3>
+                        <h3>Education</h2>
+                        <ul>
+                            <li><h4>Primary : Rachawinit School</h3></li>
+                            <li><h4>Middle : Samsemwittayalai School</h3></li>
+                            <li><h4>High : Samsemwittayalai School</h3></li>
+                            <li><h4>University : IT KMITL</h3></li>
+                        </ul>
+                        <h3>Hobby</h2>
+                        <ul>
+                            <li><h4>Playing Game</h3></li>
+                            <li><h4>Drawing</h3></li>
+                            <li><h4>Reading</h3></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
+
+            <!-- Showcase -->
             <section id="showcase">
+                <hr>
+                <h2>Showcase</h2>
+                <div class="grid">
+                    <img src="../resource/image/pitvongs/Screenshot 2025-09-12 220044.png" alt="img1">
+                    <img src="../resource/image/pitvongs/Screenshot 2025-09-12 220134.png" alt="img2">
+                    <img src="../resource/image/pitvongs/Screenshot 2025-09-12 223717.png" alt="img3">
+                </div>
 
+                <div id="popup" class="popup">
+                    <span class="close">&times;</span>
+                    <img class="popup-content" id="popup-img">
+                </div>
             </section>
+
+            <!-- Content -->
             <section id="contact">
-                
+                <hr>
+                <h2>Contact Me</h2>
+                <div id="content_card">
+                    <!-- Facebook -->
+                    <div class="flip-card" id="photocard1">
+                        <div class="flip-inner">
+                            <!-- Front -->
+                            <div class="card front card_hover_1">
+                                <div class="swap-btn btn_color_1" onclick="toggleFlip('photocard1')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <a id="facebook" href="https://www.facebook.com/thn.phnth.sukh.phibuly/?locale=th_TH">
+                                    <div class="photo-wrap">
+                                        <img src="../resource/image/pitvongs/PICT0000_1.jpg" alt="photocard">
+                                    </div>
+                                    <div class="bottom-gradient bottom_color_1"></div>
+                                    <div class="meta">
+                                        <div class="name">Facebook</div>
+                                        <div class="date">Thanapon Sukpiboon</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Back -->
+                            <div class="card back back_color_1 card_hover_1">
+                                <div class="swap-btn btn_color_1" onclick="toggleFlip('photocard1')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <div class="title back_font_1">Facebook</div>
+                                <div class="note">Thanapon Sukpiboon</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="flip-card" id="photocard2">
+                        <div class="flip-inner">
+                            <!-- Front -->
+                            <div class="card front card_hover_2">
+                                <div class="swap-btn btn_color_2" onclick="toggleFlip('photocard2')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <a id="instagram" href="https://www.instagram.com/ritsupaintblu_c/">
+                                    <div class="photo-wrap">
+                                        <img src="../resource/image/pitvongs/7a0c8ae52152f60c5ac9e0367bab47af.jpg" alt="photocard">
+                                    </div>
+                                    <div class="bottom-gradient bottom_color_2"></div>
+                                    <div class="meta">
+                                        <div class="name">Instagram</div>
+                                        <div class="date">ritsupaintblu_C</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Back -->
+                            <div class="card back back_color_2 card_hover_1">
+                                <div class="swap-btn btn_color_2" onclick="toggleFlip('photocard2')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <div class="title back_font_2">Instagram</div>
+                                <div class="note">ritsupaintblu_C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="flip-card" id="photocard3">
+                        <div class="flip-inner">
+                            <!-- Front -->
+                            <div class="card front card_hover_3">
+                                <div class="swap-btn btn_color_3" onclick="toggleFlip('photocard3')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <a id="github" href="https://github.com/ritsupaintblu">
+                                    <div class="photo-wrap">
+                                        <img src="../resource/image/pitvongs/IMG_1955.jpg" alt="photocard">
+                                    </div>
+                                    <div class="bottom-gradient bottom_color_3"></div>
+                                    <div class="meta">
+                                        <div class="name">Git Hub</div>
+                                        <div class="date">ritsupaintblu</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Back -->
+                            <div class="card back back_color_3 card_hover_3">
+                                <div class="swap-btn btn_color_3" onclick="toggleFlip('photocard3')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <div class="title back_font_3">Git Hub</div>
+                                <div class="note">ritsupaintblu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            <!-- <p>Copyright © 2025 Pitvongs</p> -->
+            <p>Copyright © 2025 ritsupaintblu</p>
         </footer>
+
+        <script src="../js/nav.js"></script>
+        <script src="../js/flipcard.js"></script>
+        <script src="../js/pop_up.js"></script>
     </body>
 </html>
