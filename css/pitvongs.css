@@ -1,6 +1,6 @@
 :root{
     --font-signature: 'GIGI', sans-serif;
-    --primary: #a90000;
+    --primary: #ddd280;
     --secondary: #1a1913;
     --font_color_nav: #ffffff;
 }
@@ -37,8 +37,8 @@ header {
     border-radius: 50px;
     z-index: 1000; 
     box-shadow: 
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 32px rgba(169,0,0,0.5),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 32px rgba(221,210,128,0.5),
         0 0 2px var(--primary);
 }
 .logo {
@@ -46,12 +46,12 @@ header {
     font-size: 2.5rem;
     color: var(--font_color_nav);
     text-shadow: 
-        0 0 4px rgba(169,0,0,1),
-        0 0 4px rgba(169,0,0,1),
-        0 0 8px rgba(169,0,0,0.9),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 32px rgba(169,0,0,0.5),
+        0 0 4px rgb(189, 173, 56),
+        0 0 4px rgb(221, 204, 75),
+        0 0 8px rgba(221,210,128,0.9),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 32px rgba(221,210,128,0.5),
         0 0 2px var(--primary);
 }
 header img {
@@ -83,12 +83,12 @@ nav ul li a {
 }
 .nav-link.active {
     text-shadow: 
-        0 0 4px rgba(169,0,0,1),
-        0 0 4px rgba(169,0,0,1),
-        0 0 8px rgba(169,0,0,0.9),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 32px rgba(169,0,0,0.5),
+        0 0 4px rgb(189, 173, 56),
+        0 0 4px rgb(221, 204, 75),
+        0 0 8px rgba(221,210,128,0.9),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 32px rgba(221,210,128,0.5),
         0 0 2px var(--primary);
 }
 .nav-link.active::before {
@@ -139,12 +139,12 @@ h2 {
     font-family: var(--font-signature);
     color: var(--font_color_nav);
     text-shadow: 
-        0 0 4px rgba(169,0,0,1),
-        0 0 4px rgba(169,0,0,1),
-        0 0 8px rgba(169,0,0,0.9),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 32px rgba(169,0,0,0.5),
+        0 0 4px rgb(189, 173, 56),
+        0 0 4px rgb(221, 204, 75),
+        0 0 8px rgba(221,210,128,0.9),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 32px rgba(221,210,128,0.5),
         0 0 2px var(--primary);
     margin: 0 0 5rem 0;
 }
@@ -154,12 +154,12 @@ h1 {
     font-family: var(--font-signature);
     color: var(--font_color_nav);
     text-shadow: 
-        0 0 4px rgba(169,0,0,1),
-        0 0 4px rgba(169,0,0,1),
-        0 0 8px rgba(169,0,0,0.9),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 16px rgba(169,0,0,0.7),
-        0 0 32px rgba(169,0,0,0.5),
+        0 0 4px rgb(189, 173, 56),
+        0 0 4px rgb(221, 204, 75),
+        0 0 8px rgba(221,210,128,0.9),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 32px rgba(221,210,128,0.5),
         0 0 2px var(--primary);
 }
 
@@ -279,9 +279,9 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
-        box-shadow: 
-            0 0 16px rgba(169,0,0,0.7),
-            0 0 32px rgba(169,0,0,0.5),
+        box-shadow:
+            0 0 16px rgba(221,210,128,0.7),
+            0 0 32px rgba(221,210,128,0.5),
             0 0 2px var(--primary);
     }
 
