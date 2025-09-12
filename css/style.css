@@ -4,9 +4,10 @@
     --radius: 22px;
     --shadow: 0 0px 36px;
     --font-signature: 'GIGI', sans-serif;
-    --primary: #a90000;
-    --secondary: #1a1913;
-    --accent: #ddd280;
+    --primary-1: #a90000;
+    --primary-2: #ddd280;
+    --secondary-1: #1a1913;
+    --secondary-2: #f0efea;
 }
 
 @font-face {
@@ -69,12 +70,12 @@ body{
 }
 
 .card_hover_1:hover{
-    box-shadow:var(--shadow) var(--primary);
+    box-shadow:var(--shadow) var(--primary-1);
     /* transform:scale(1.03); */
     transition:transform 0.3s, box-shadow 0.3s;
 }
 .card_hover_2:hover{
-    box-shadow:var(--shadow) var(--accent);
+    box-shadow:var(--shadow) var(--primary-2);
     /* transform:scale(1.03); */
     transition:transform 0.3s, box-shadow 0.3s;
 }
@@ -96,10 +97,10 @@ body{
     height:42%;
 }
 .bottom_color_1{
-    background: linear-gradient(180deg, rgba(255,255,255,0.0) 10%, rgba(106,154,131,0.06) 40%, var(--primary) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.0) 10%, rgba(106,154,131,0.06) 40%, var(--primary-1) 100%);
 }
 .bottom_color_2{
-    background: linear-gradient(180deg, rgba(255,255,255,0.0) 10%, rgba(106,154,131,0.06) 40%, var(--accent) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.0) 10%, rgba(106,154,131,0.06) 40%, var(--primary-2) 100%);
 }
 .meta{
     position:absolute; left:18px; bottom:12px; color:white;
@@ -110,8 +111,27 @@ body{
 .handwrite{
     position:absolute; left:14px; top:12px;
     font-family:var(--font-signature); font-size:28px; color:white;
-    text-shadow:0 3px 8px rgba(0,0,0,0.35);
     transform:rotate(-6deg);
+}
+.signature_color_1{
+    text-shadow:
+        0 0 4px rgba(169,0,0,1),
+        0 0 4px rgba(169,0,0,1),
+        0 0 8px rgba(169,0,0,0.9),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 32px rgba(169,0,0,0.5),
+        0 0 2px var(--primary-1);
+}
+.signature_color_2 {
+    text-shadow:
+        0 0 4px rgb(189, 173, 56),
+        0 0 4px rgb(221, 204, 75),
+        0 0 8px rgba(221,210,128,0.9),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 16px rgba(221,210,128,0.7),
+        0 0 32px rgba(221,210,128,0.5),
+        0 0 2px var(--primary-2);;
 }
 
 /* back */
@@ -120,17 +140,18 @@ body{
     display:flex; align-items:center; justify-content:center;
 }
 .back_color_1{
-    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(180deg, var(--secondary-1) 50%, var(--primary-1) 100%);
 }
 .back_color_2{
-    background: linear-gradient(180deg, var(--accent) 0%, var(--secondary) 100%);
+    background: linear-gradient(180deg, var(--secondary-2) 50%, var(--primary-2) 100%);
 }
 .back .title{
     font-family:var(--font-signature);
     font-size:36px;
     opacity:0.95;
-    color:#ffffff;
 }
+.back_font_1{ color: #ffffff; }
+.back_font_2{ color: #544431; }
 .back .note{
     position:absolute; bottom:14px; width:100%;
     text-align:center; font-size:10px; color:#ffffff;

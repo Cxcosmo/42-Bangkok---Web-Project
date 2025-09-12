@@ -1,0 +1,13 @@
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row; /* เรียงแนวนอน */
+  gap: 1rem;
+  list-style: none; /* เอาจุดออก */
+}
+nav ul li a {
+  text-decoration: none;
+  color: black; /* เปลี่ยนสีตามต้องการ */
+  font-weight: bold;
+}
