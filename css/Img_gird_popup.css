@@ -1,11 +1,16 @@
 .grid {
+    width: 100%;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
 
+    justify-items: center;
+    margin: 0 auto;
 }
+
 .grid img {
-    width: 80%;
+    width: 300px;
     height: auto;
     cursor: pointer;
     border-radius: 8px;
@@ -45,4 +50,21 @@
 }
 .close:hover {
     color: #a90000;
+}
+
+@media (max-width: 1300px) {
+    .grid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: repeat(1, 3fr);
+        gap: 2rem;
+    }
+    .grid img {
+        width: 50%;
+        height: auto;
+    }
 }

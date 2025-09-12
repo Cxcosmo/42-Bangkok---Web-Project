@@ -117,13 +117,16 @@ nav ul li a {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     flex: 1;
 }
 
 section {
+    position: relative;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -146,36 +149,36 @@ h2 {
     margin: 0 0 5rem 0;
 }
 
+h1 {
+    font-size: 3rem;
+    font-family: var(--font-signature);
+    color: var(--font_color_nav);
+    text-shadow: 
+        0 0 4px rgba(169,0,0,1),
+        0 0 4px rgba(169,0,0,1),
+        0 0 8px rgba(169,0,0,0.9),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 16px rgba(169,0,0,0.7),
+        0 0 32px rgba(169,0,0,0.5),
+        0 0 2px var(--primary);
+}
+
 hr {
     width: 90%;
     border: 1px solid var(--primary);
     margin: 0 0 5rem 0;
 }
 
+.about-info {
+    display: flex;
+    flex-direction: column;
+    color: var(--font_color_nav);
+}
+
 .about-container {
-    max-width: 1500px;
-    width: 100%;
-    padding: 0 5rem;
-    margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    align-items: center;
-}
-
-
-.about-image img {
-  width: 600px;
-  height: auto;
-}
-
-.about-info {
-    width: 600px;
-}
-
-.about-info h2 {
-  margin-bottom: 15px;
-  font-size: 28px;
+    gap: 5rem;
 }
 
 #content_card {
@@ -225,7 +228,6 @@ hr {
 
 footer {
     width: 100%;
-
     text-align: center;
     padding: 1rem 0;
     color: var(--font_color_nav);
@@ -249,5 +251,9 @@ footer {
         flex-direction: column;
         margin: 50px;
         gap: 3rem;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
