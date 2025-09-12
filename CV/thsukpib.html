@@ -5,10 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Thsukpib CV</title>
         <link rel="stylesheet" href="../css/thsukpib.css">
+        <link rel="stylesheet" href="../css/flipcard.css">
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     </head>
     <body>
         <header>
-            <div class="title">Cxcosmo</div>
+            <div class="logo">Cxcosmo</div>
             <nav>
                 <ul>
                     <li><a href="#about-me" class="nav-link">About-Me</a></li>
@@ -19,20 +21,115 @@
             <a href="../index.html" ><img src="../resource/image/thsukpib/11a223ecd6b94818fe4fc6ded9d13b76.jpg" alt="Home"></a>
         </header>
         <main>
+            <!-- About Me -->
             <section id="about-me">
-                <h1>About Me</h1>
+                <div>
+
+                </div>
             </section>
+            <!-- Showcase -->
             <section id="showcase">
-                <h1>Showcase</h1>
+                
             </section>
+            <!-- Content -->
             <section id="contact">
-                <h1>Contact</h1>
+                <h2>Contact Me</h2>
+                <div id="content_card">
+                    <!-- Facebook -->
+                    <div class="flip-card" id="photocard1">
+                        <div class="flip-inner">
+                            <!-- Front -->
+                            <div class="card front card_hover_1">
+                                <div class="swap-btn btn_color_1" onclick="toggleFlip('photocard1')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <a id="facebook" href="https://www.facebook.com/thn.phnth.sukh.phibuly/?locale=th_TH">
+                                    <div class="photo-wrap">
+                                        <img src="../resource/image/thsukpib/PICT0000_1.jpg" alt="photocard">
+                                    </div>
+                                    <div class="bottom-gradient bottom_color_1"></div>
+                                    <div class="meta">
+                                        <div class="name">Facebook</div>
+                                        <div class="date">Thanapon Sukpiboon</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Back -->
+                            <div class="card back back_color_1 card_hover_1">
+                                <div class="swap-btn btn_color_1" onclick="toggleFlip('photocard1')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <div class="title back_font_1">Facebook</div>
+                                <div class="note">Thanapon Sukpiboon</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="flip-card" id="photocard2">
+                        <div class="flip-inner">
+                            <!-- Front -->
+                            <div class="card front card_hover_2">
+                                <div class="swap-btn btn_color_2" onclick="toggleFlip('photocard2')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <a id="instagram" href="https://www.instagram.com/cxcosmo_c/">
+                                    <div class="photo-wrap">
+                                        <img src="../resource/image/thsukpib/7a0c8ae52152f60c5ac9e0367bab47af.jpg" alt="photocard">
+                                    </div>
+                                    <div class="bottom-gradient bottom_color_2"></div>
+                                    <div class="meta">
+                                        <div class="name">Instagram</div>
+                                        <div class="date">Cxcosmo_C</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Back -->
+                            <div class="card back back_color_2 card_hover_1">
+                                <div class="swap-btn btn_color_2" onclick="toggleFlip('photocard2')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <div class="title back_font_2">Instagram</div>
+                                <div class="note">Cxcosmo_C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="flip-card" id="photocard3">
+                        <div class="flip-inner">
+                            <!-- Front -->
+                            <div class="card front card_hover_3">
+                                <div class="swap-btn btn_color_3" onclick="toggleFlip('photocard3')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <a id="github" href="https://github.com/Cxcosmo">
+                                    <div class="photo-wrap">
+                                        <img src="../resource/image/thsukpib/IMG_1955.jpg" alt="photocard">
+                                    </div>
+                                    <div class="bottom-gradient bottom_color_3"></div>
+                                    <div class="meta">
+                                        <div class="name">Git Hub</div>
+                                        <div class="date">Cxcosmo</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Back -->
+                            <div class="card back back_color_3 card_hover_3">
+                                <div class="swap-btn btn_color_3" onclick="toggleFlip('photocard3')">
+                                    <i data-lucide="refresh-cw"></i>
+                                </div>
+                                <div class="title back_font_3">Git Hub</div>
+                                <div class="note">Cxcosmo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
             <!-- <p>Copyright © 2025 Thsukpib</p> -->
         </footer>
 
-        <script src="../js/thsukpib.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/flipcard.js"></script>
     </body>
 </html>
