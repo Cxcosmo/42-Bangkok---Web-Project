@@ -1,8 +1,8 @@
 :root{
     --font-signature: 'GIGI', sans-serif;
     --primary: #ddd280;
-    --secondary: #1a1913;
-    --font_color_nav: #ffffff;
+    --secondary: #f0efea;
+    --font_color_nav: #544431;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: rgb(16, 4, 4);
+    background-color: rgb(240, 237, 231);
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
@@ -101,7 +101,7 @@ nav ul li a {
     height: 30px;
     -webkit-mask: url("../resource/svg/her-trick-skeleton.svg") no-repeat center/contain;
     mask: url("../resource/svg/her-trick-skeleton.svg") no-repeat center/contain;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 .nav-link.active::after {
     content: "";
@@ -113,7 +113,7 @@ nav ul li a {
     height: 30px;
     -webkit-mask: url("../resource/svg/his-treat-skeleton.svg") no-repeat center/contain;
     mask: url("../resource/svg/his-treat-skeleton.svg") no-repeat center/contain;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 main {
@@ -219,7 +219,7 @@ hr {
     background: linear-gradient(180deg, white 0%, pink 100%);
 }
 .back_color_3{
-    background: linear-gradient(180deg, white 0%, var(--secondary) 100%);
+    background: linear-gradient(180deg, white 0%, #000000 100%);
 }
 
 .back_font_1{ color: rgb(0, 64, 255); }
