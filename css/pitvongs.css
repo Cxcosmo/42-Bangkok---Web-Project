@@ -272,7 +272,7 @@ footer {
         left: 0;
         width: 100%;
         background: var(--secondary);
-        border-radius: 20px; /* ทุกมุมโค้งเท่ากัน */
+        border-radius: 20px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
@@ -283,7 +283,7 @@ footer {
     }
 
     nav.open {
-         max-height: 300px;
+        max-height: 300px;
     }
 
     nav ul {
@@ -304,11 +304,11 @@ footer {
     }
 
     .home-logo img {
-         height: 50px;
-         width: 50px;
-         border-radius: 50%;
-         object-fit: cover;
-         margin-right: 0.5rem;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0.5rem;
     }
 
     .logo {

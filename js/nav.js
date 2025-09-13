@@ -26,8 +26,8 @@ setActiveLink();
 window.addEventListener("scroll", setActiveLink);
 
 const hamburger = document.getElementById("hamburger");
-    const nav = document.querySelector("header nav");
+const nav = document.querySelector("header nav");
 
-    hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
 });
