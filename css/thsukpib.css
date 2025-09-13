@@ -264,9 +264,6 @@ footer {
         align-items: center;
     }
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 0 1rem;
         border-radius: 50px;
     }
@@ -277,7 +274,7 @@ footer {
         left: 0;
         width: 100%;
         background: var(--secondary);
-        border-radius: 20px; /* ทุกมุมโค้งเท่ากัน */
+        border-radius: 20px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
@@ -288,14 +285,16 @@ footer {
     }
 
     nav.open {
-         max-height: 300px;
+        max-height: 300px;
     }
 
     nav ul {
-         flex-direction: column;
-         align-items: center;
-         gap: 1.5rem;
-         padding: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        display: flex;
+        text-align: center;
     }
 
     .hamburger {
@@ -319,12 +318,5 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         font-size: 2rem;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
     }
 }
